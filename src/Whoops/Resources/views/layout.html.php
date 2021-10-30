@@ -33,8 +33,6 @@
 
   framesContainer.forEach((frame, key) => {
     const frameId = frame.getAttribute('id').split('-').pop();
-    console.log(frame);
-
     frame.addEventListener('click', () => {
       removeFrameCodeActive();
       const frameCode = document.getElementById(`frame-code-${frameId}`);
